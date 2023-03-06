@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-hover {
+    @apply hover:text-color-secondary transform ease-in duration-200;
+  }
+  .btn {
+    @apply bg-color-secondary px-9 py-3 font-bold capitalize rounded-lg hover:opacity-90;
+  }
+  .title {
+    @apply text-3xl font-bold leading-snug md:text-4xl mb-4;
+  }
+  .cart {
+    @apply border-2 border-color-gray rounded-2xl py-20 px-5 cursor-pointer hover:bg-color-primary-dark ease-in duration-200;
+  }
+  .cart-icon {
+    @apply bg-color-secondary inline-block py-5 px-6 rounded-2xl text-4xl;
+  }
+  .blob-1 {
+    @apply w-80 h-80 absolute top-0 -left-5 bg-color-blob rounded-full opacity-30 -z-10 blur-2xl overflow-hidden;
+  }
+  .blob-2 {
+    @apply w-80 h-80 absolute bottom-10 right-0 bg-color-secondary rounded-full opacity-30 -z-10 blur-2xl overflow-hidden;
+  }
+  .active-pic {
+    @apply border-2 border-color-secondary;
+  }
+  .user-text {
+    @apply hidden;
+  }
+  .active-text {
+    @apply block animate-pulse;
+  }
+  .card-btn {
+    @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary duration-200;
+  }
+}
