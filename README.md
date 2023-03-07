@@ -1,1 +1,1 @@
-# tailwindcss-practice
+# practice-tailwindcss
